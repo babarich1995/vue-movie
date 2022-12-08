@@ -82,7 +82,7 @@
       </li>
       <li class="nav-item mb-2">
         <sidenav-item
-          url="/"
+          url="/signin"
           class="side-item"
           
           :navText="'Log Out'"
@@ -132,6 +132,7 @@ export default {
       const routeArr = this.$route.path.split("/");
       return routeArr[1];
     },
+    
     getUser(){
      const  authUser = JSON.parse(window.localStorage.getItem('token'));
      this.role = authUser

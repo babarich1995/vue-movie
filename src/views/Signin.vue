@@ -121,7 +121,7 @@ export default {
   },
    getNowPlaying(page){
       
-        axios.get(`https://api.themoviedb.org/3/movie/now_playing?api_key=c3612c0718ad5a9e707c01215bac2e37&page= ${page}&language=en-US&region=US`,
+        axios.get(`https://api.themoviedb.org/3/movie/upcoming?api_key=c3612c0718ad5a9e707c01215bac2e37&page= ${page}&language=en-US&region=US`,
        
      
         )
